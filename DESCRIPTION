@@ -1,0 +1,11 @@
+Package: severance
+Title: Color Palettes Inspired by Severance
+Version: 0.0.0.9000
+Authors@R: 
+    person("Isabella", "Velásquez", , "ivelasq@gmail.com", role = c("aut", "cre"))
+Description: Palettes inspired by the show Severance on Apple TV+.
+Imports: ggplot2
+License: Attribution-NonCommercial 4.0 International
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1

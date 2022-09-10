@@ -1,27 +1,32 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
 # severance <img src="man/figures/logo.png" align="right" height="300" />
 
-The severance package contains color palettes for R inspired by the show
-[Severance](https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx).
+The severance package contains color palettes for R inspired by the show [Severance](https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx).
 
-Images were sourced from the [Apple TV+ Press
-website](https://www.apple.com/tv-pr/originals/severance/episodes-images/).
-The structure of the package was based on the [MetBrewer
-package](https://github.com/BlakeRMills/MetBrewer) by Blake R. Mills and
-the [wesanderson package](https://github.com/karthik/wesanderson) by
-Karthik Ram.
+Images were sourced from the [Apple TV+ Press website](https://www.apple.com/tv-pr/originals/severance/episodes-images/). The structure of the package was based on the [MetBrewer package](https://github.com/BlakeRMills/MetBrewer) by Blake R. Mills and the [wesanderson package](https://github.com/karthik/wesanderson) by Karthik Ram.
 
--   [Installation](#installation)
--   [Example](#example)
--   [Palettes](#palettes)
--   [Notes](#notes)
+* [Installation](#installation)
+* [Example](#example)
+* [Palettes](#palettes)
+* [Notes](#notes)
 
 ## Installation
 
-You can install the development version of severance from
-[GitHub](https://github.com/) with:
+You can install the development version of severance from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -30,17 +35,21 @@ devtools::install_github("ivelasq/seveRance")
 
 ## Example
 
-Below is an example using [TidyTuesday
-data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-02-23/readme.md)
-from the Bureau of Labor Statistics. The plot is based on one created by
-Amanda Luby from the [Swarthmore College Data Visualization
-Group](https://aluby.domains.swarthmore.edu/sdv/posts/2021-03-05-bls-earnings-data/).
+Below is an example using [TidyTuesday data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-02-23/readme.md) from the Bureau of Labor Statistics. The plot is based on one created by Amanda Luby from the [Swarthmore College Data Visualization Group](https://aluby.domains.swarthmore.edu/sdv/posts/2021-03-05-bls-earnings-data/).
 
-<img src="man/figures/README-plot-ref-1.png" width="100%" />
+```{r plot-ref}
+#| ref.label = "plot",
+#| echo = FALSE,
+#| message = FALSE,
+#| dpi = 300
+```
 
 The code to reproduce the plot is below:
 
-``` r
+```{r}
+#| label = "plot",
+#| eval = FALSE,
+#| fig.alt = "Three steamplots showing the gender disparity between races displayed in three different palettes from the severance package"
 library(severance)
 library(ggplot2)
 library(cowplot)
@@ -140,46 +149,33 @@ plot_grid(title,
 
 ### Colorblind-friendly
 
-------------------------------------------------------------------------
+---
 
 #### Dinner
-
 <img src="man/figures/dinner_cbf.jpg" alt="A scene from Severance where Helly and Dylan are standing in a room">
 
 #### Hell
-
 <img src="man/figures/hell_cbf.jpg" alt="A scene from Severance where Helly is sitting on the floor">
 
 #### Jazz02
-
 <img src="man/figures/jazz02_cbf.jpg" alt="A scene from Severance where the four main characters are staring at something">
 
 #### TheYouYouAre
-
 <img src="man/figures/theyouyouare_cbf.jpg" alt="A scene from Severance where Helly sits in a chair">
 
 ### Not colorblind-friendly
 
-------------------------------------------------------------------------
-
+---
 #### HideAndSeek
-
 <img src="man/figures/hideandseek_ncbf.jpg" alt="A scene from Severance where a bunch of characters look at Milchick">
 
 #### Jazz01
-
 <img src="man/figures/jazz01_ncbf.jpg" alt="A scene from Severance where Helly and Milchick dance">
 
 ## Notes
 
-Thank you to the package developers of [MetBrewer
-package](https://github.com/BlakeRMills/MetBrewer), Blake R. Mills, and
-the [wesanderson package](https://github.com/karthik/wesanderson),
-Karthik Ram, for sharing their code.
+Thank you to the package developers of [MetBrewer package](https://github.com/BlakeRMills/MetBrewer), Blake R. Mills, and the [wesanderson package](https://github.com/karthik/wesanderson), Karthik Ram, for sharing their code.
 
-Thank you to Amanda Luby from the [Swarthmore College Data Visualization
-Group](https://aluby.domains.swarthmore.edu/sdv/posts/2021-03-05-bls-earnings-data/)
-for sharing her data visualization.
+Thank you to Amanda Luby from the [Swarthmore College Data Visualization Group](https://aluby.domains.swarthmore.edu/sdv/posts/2021-03-05-bls-earnings-data/) for sharing her data visualization.
 
-Colorblind-friendliness was checked using the [Adobe Color Accessibility
-Wheel](https://color.adobe.com/create/color-accessibility).
+Colorblind-friendliness was checked using the [Adobe Color Accessibility Wheel](https://color.adobe.com/create/color-accessibility).
