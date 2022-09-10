@@ -14,7 +14,7 @@ the [wesanderson package](https://github.com/karthik/wesanderson) by
 Karthik Ram.
 
 -   [Installation](#installation)
--   [Example](#example)
+-   [Examples](#examples)
 -   [Palettes](#palettes)
 -   [Notes](#notes)
 
@@ -28,15 +28,15 @@ You can install the development version of severance from
 devtools::install_github("ivelasq/seveRance")
 ```
 
-## Example
+## Examples
 
-Below is an example using [TidyTuesday
+Here are examples of the severange package using [TidyTuesday
 data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-02-23/readme.md)
 from the Bureau of Labor Statistics. The plot is based on one created by
 Amanda Luby from the [Swarthmore College Data Visualization
 Group](https://aluby.domains.swarthmore.edu/sdv/posts/2021-03-05-bls-earnings-data/).
 
-<img src="man/figures/README-plot-ref-1.png" width="100%" />
+<img src="man/figures/README-plot-ref-1.png" title="Three steamplots showing the gender disparity between races displayed in three different palettes from the severance package" alt="Three steamplots showing the gender disparity between races displayed in three different palettes from the severance package" width="100%" />
 
 The code to reproduce the plot is below:
 
@@ -83,16 +83,8 @@ p <-
            group = race
          )) +
   geom_ribbon() +
-  theme_minimal() +
-  theme(
-    legend.position = "none",
-    axis.title.x = element_blank(),
-    axis.title.y = element_blank(),
-    axis.text.x = element_blank(),
-    axis.text.y = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.grid.major.x = element_blank()
-  )
+  theme_void() +
+  theme(legend.position = "none")
 
 p1 <- p + scale_fill_manual(values = severance_palette("Jazz02"))
 p2 <- p + scale_fill_manual(values = severance_palette("TheYouYouAre"))
