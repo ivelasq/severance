@@ -25,7 +25,7 @@ You can install the development version of severance from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ivelasq/seveRance")
+devtools::install_github("ivelasq/severance")
 ```
 
 ## Examples
