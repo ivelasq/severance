@@ -101,15 +101,9 @@ p3 <- p + scale_fill_manual(values = severance_palette("Hell"))
 
 title <- ggdraw() +
   draw_label(
-    "The gender wage gap persists across Asian, Black, and White Americans",
+    "Original visualization by Amanda Luby, Swarthmore College",
     fontface = "bold",
     x = 0,
-    hjust = 0
-  ) +
-  draw_label(
-    "Original visualization by Amanda Luby, Swarthmore College",
-    x = 0,
-    vjust = 2.2,
     hjust = 0
   ) +
   theme(plot.margin = margin(0, 0, 0, 7))
