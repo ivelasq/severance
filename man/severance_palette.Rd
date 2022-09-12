@@ -8,7 +8,7 @@ severance_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{Name of desired palette. Choices are:
-\code{Dinner}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}}
+\code{Dinner}, \code{Half}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}}
 
 \item{n}{Number of colors desired. If omitted, uses all colours.}
 

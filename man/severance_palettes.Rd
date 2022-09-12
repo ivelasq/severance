@@ -5,13 +5,13 @@
 \alias{severance_palettes}
 \title{Complete list of palettes.}
 \format{
-An object of class \code{list} of length 6.
+An object of class \code{list} of length 7.
 }
 \usage{
 severance_palettes
 }
 \description{
 Use names(severance) to return all possible palette names. Current choices are:
-\code{Dinner}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}
+\code{Dinner}, \code{Half}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}
 }
 \keyword{datasets}

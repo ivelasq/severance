@@ -3,10 +3,11 @@
 #' Complete list of palettes.
 #'
 #' Use names(severance) to return all possible palette names. Current choices are:
-#' \code{Dinner}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}
+#' \code{Dinner}, \code{Half}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}
 #' @export
 severance_palettes <- list(
   Dinner = c("#88AAC6", "#113847", "#4A5B65", "#D6E3EC", "#21475A"),
+  Half = c("#3A5662", "#6C8B90", "#C2D0DB", "#678A76", "#31504B"),
   Hell = c("#9BAAAF", "#11304F", "#989B6C", "#3F4738", "#195972", "#4D251D"),
   HideAndSeek = c("#405B76", "#E6F0F1", "#694F42", "#1F334B", "#9B4D40", "#171F22"),
   Jazz01 = c("#D29292", "#525832", "#F98F5B", "#7E8273", "#F17983"),
@@ -20,7 +21,7 @@ severance_palettes <- list(
 #'
 #' @param n Number of colors desired. If omitted, uses all colours.
 #' @param name Name of desired palette. Choices are:
-#' \code{Dinner}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}
+#' \code{Dinner}, \code{Half}, \code{Hell}, \code{HideAndSeek}, \code{Jazz01}, \code{Jazz02}, \code{TheYouYouAre}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colors.
 #' @return A vector of colors.
