@@ -148,6 +148,10 @@ plot_grid(title,
 
 ------------------------------------------------------------------------
 
+#### Half
+
+<img src="man/figures/half_ncbf.jpg" alt="A scene from Severance where a bunch of characters are talking at their desks">
+
 #### HideAndSeek
 
 <img src="man/figures/hideandseek_ncbf.jpg" alt="A scene from Severance where a bunch of characters look at Milchick">
@@ -169,3 +173,6 @@ for sharing her data visualization.
 
 Colorblind-friendliness was checked using the [Adobe Color Accessibility
 Wheel](https://color.adobe.com/create/color-accessibility).
+
+Please reach out with any questions/comments/suggestions! If you have a
+palette to contribute, please file a Pull Request.
